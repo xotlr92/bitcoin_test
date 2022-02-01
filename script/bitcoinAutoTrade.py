@@ -48,7 +48,7 @@ def buy_crypto_currency(ticker):
     bithumb.buy_market_order(ticker, unit)
 
 def sell_crypto_currency(ticker):
-    unit = bithumb.get_balance(ticker)[0]*FEE
+    unit = bithumb.get_balance(ticker)[0]
     bithumb.sell_market_order(ticker, unit)
 
 now = datetime.datetime.now()
